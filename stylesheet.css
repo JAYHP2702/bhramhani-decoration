@@ -1,0 +1,62 @@
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Poppins', sans-serif;
+color: #333;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Playfair Display', serif;
+}
+.hero-bg {
+background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0.7) 60%, rgba(255, 255, 255, 0.4) 80%, rgba(255, 255, 255, 0) 100%), url('https://readdy.ai/api/search-image?query=Luxurious%20wedding%20mandap%20decoration%20with%20golden%20elements%2C%20red%20flowers%2C%20elegant%20drapes%2C%20soft%20lighting%2C%20intricate%20details%2C%20royal%20Indian%20wedding%20setting%2C%20professional%20event%20management%2C%20high-end%20decoration%2C%20sophisticated%20venue%20setup%2C%20traditional%20and%20modern%20fusion&width=1200&height=800&seq=12345&orientation=landscape');
+background-size: cover;
+background-position: center right;
+}
+.service-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 30px rgba(197, 165, 114, 0.2);
+}
+.testimonial-card {
+transition: all 0.3s ease;
+}
+.testimonial-card:hover {
+transform: scale(1.02);
+}
+input:focus, textarea:focus {
+outline: none;
+border-color: #C5A572;
+}
+.gallery-item:hover img {
+transform: scale(1.05);
+}
+.nav-link {
+position: relative;
+}
+.nav-link::after {
+content: '';
+position: absolute;
+width: 0;
+height: 2px;
+bottom: -4px;
+left: 0;
+background-color: #C5A572;
+transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+width: 100%;
+}
+.active-nav::after {
+width: 100%;
+}
+.scroll-down {
+animation: bounce 2s infinite;
+}
+@keyframes bounce {
+0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+40% {transform: translateY(-10px);}
+60% {transform: translateY(-5px);}
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
