@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bhramhani Decoration - Luxury Event Management</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#C5A572',secondary:'#8B1F2B'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Poppins', sans-serif;
+color: #333;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Playfair Display', serif;
+}
+.hero-bg {
+background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0.7) 60%, rgba(255, 255, 255, 0.4) 80%, rgba(255, 255, 255, 0) 100%), url('https://readdy.ai/api/search-image?query=Luxurious%20wedding%20mandap%20decoration%20with%20golden%20elements%2C%20red%20flowers%2C%20elegant%20drapes%2C%20soft%20lighting%2C%20intricate%20details%2C%20royal%20Indian%20wedding%20setting%2C%20professional%20event%20management%2C%20high-end%20decoration%2C%20sophisticated%20venue%20setup%2C%20traditional%20and%20modern%20fusion&width=1200&height=800&seq=12345&orientation=landscape');
+background-size: cover;
+background-position: center right;
+}
+.service-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 30px rgba(197, 165, 114, 0.2);
+}
+.testimonial-card {
+transition: all 0.3s ease;
+}
+.testimonial-card:hover {
+transform: scale(1.02);
+}
+input:focus, textarea:focus {
+outline: none;
+border-color: #C5A572;
+}
+.gallery-item:hover img {
+transform: scale(1.05);
+}
+.nav-link {
+position: relative;
+}
+.nav-link::after {
+content: '';
+position: absolute;
+width: 0;
+height: 2px;
+bottom: -4px;
+left: 0;
+background-color: #C5A572;
+transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+width: 100%;
+}
+.active-nav::after {
+width: 100%;
+}
+.scroll-down {
+animation: bounce 2s infinite;
+}
+@keyframes bounce {
+0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+40% {transform: translateY(-10px);}
+60% {transform: translateY(-5px);}
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+</style>
+</head>
+<body>
+<!-- Header -->
+<header class="fixed w-full z-50 transition-all duration-300 bg-white bg-opacity-95 shadow-md">
+<div class="container mx-auto px-4 py-3 flex items-center justify-between">
+<div class="flex items-center">
+<a href="#" class="text-primary font-['Playfair_Display'] text-2xl font-bold">
+<span class="text-primary">Bhramhani</span>
+<span class="text-xs uppercase tracking-widest block text-secondary">Mandap Decoration</span>
+</a>
+</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a href="#" class="nav-link active-nav text-gray-800 hover:text-primary transition-colors">Home</a>
+<a href="#about" class="nav-link text-gray-800 hover:text-primary transition-colors">About Us</a>
+<a href="#services" class="nav-link text-gray-800 hover:text-primary transition-colors">Services</a>
+<a href="#portfolio" class="nav-link text-gray-800 hover:text-primary transition-colors">Portfolio</a>
+<a href="#testimonials" class="nav-link text-gray-800 hover:text-primary transition-colors">Testimonials</a>
+<a href="#contact" class="nav-link text-gray-800 hover:text-primary transition-colors">Contact</a>
+</nav>
+<div class="flex items-center space-x-4">
+<a href="#contact" class="hidden md:inline-block bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap">Get a Quote</a>
+<button class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700">
+<i class="ri-menu-line ri-lg"></i>
+</button>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="hero-bg min-h-screen flex items-center w-full">
+<div class="container mx-auto px-4 py-20 md:py-32">
+<div class="w-full md:w-1/2 lg:w-5/12">
+<div class="inline-block px-3 py-1 bg-white bg-opacity-80 !rounded-button mb-4">
+<span class="text-secondary font-medium text-sm">Established 2004</span>
+</div>
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+Transforming Venues Into <span class="text-primary">Magical Experiences</span>
+</h1>
+<p class="text-gray-700 text-lg mb-8 max-w-lg">
+We specialize in creating breathtaking decorations for weddings, corporate events, and spiritual gatherings that leave lasting impressions.
+</p>
+<div class="flex flex-wrap gap-4">
+<a href="#services" class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap">
+Explore Services
+</a>
+<a href="#portfolio" class="border-2 border-primary text-primary px-8 py-3 !rounded-button hover:bg-primary hover:text-white transition-all whitespace-nowrap">
+View Portfolio
+</a>
+</div>
+<div class="mt-16 hidden md:block">
+<a href="#about" class="scroll-down flex items-center text-gray-600 hover:text-primary transition-colors">
+<span class="mr-2">Scroll Down</span>
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-arrow-down-line"></i>
+</div>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section id="about" class="py-20 bg-white">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">About <span class="text-primary">Bhramhani</span></h2>
+<div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+<p class="text-gray-600 max-w-2xl mx-auto">
+Creating magical moments and transforming venues since 2004
+</p>
+</div>
+<div class="flex flex-col md:flex-row gap-10 items-center">
+<div class="w-full md:w-1/2">
+<img src="https://readdy.ai/api/search-image?query=Elegant%20team%20of%20event%20decorators%20working%20on%20a%20luxurious%20wedding%20setup%2C%20professional%20event%20management%20team%20in%20formal%20attire%2C%20decorating%20a%20venue%20with%20golden%20elements%20and%20red%20flowers%2C%20teamwork%20in%20high-end%20event%20decoration%2C%20diverse%20team%20of%20professionals%2C%20elegant%20venue%20transformation%20in%20progress&width=600&height=500&seq=12346&orientation=landscape" alt="Our Team" class="w-full h-auto rounded-lg shadow-xl object-cover">
+</div>
+<div class="w-full md:w-1/2">
+<h3 class="text-2xl font-semibold mb-4 text-gray-800">Our Journey</h3>
+<p class="text-gray-600 mb-6">
+Founded in 2004, Bhramhani Decoration has evolved into one of the most prestigious event decoration companies in the region. With a passion for creating extraordinary experiences, we have successfully transformed thousands of venues for weddings, corporate events, and spiritual gatherings.
+</p>
+<p class="text-gray-600 mb-6">
+Our team of creative designers, skilled craftsmen, and dedicated project managers work together to bring your vision to life. We believe that every event is unique and deserves a personalized touch that reflects the personality and preferences of our clients.
+</p>
+<div class="grid grid-cols-2 gap-6 mb-8">
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center text-primary mr-3">
+<i class="ri-award-line ri-lg"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-800">Excellence</h4>
+<p class="text-gray-600 text-sm">Committed to delivering the highest quality</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center text-primary mr-3">
+<i class="ri-heart-line ri-lg"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-800">Passion</h4>
+<p class="text-gray-600 text-sm">Love for creating beautiful experiences</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center text-primary mr-3">
+<i class="ri-creativity-line ri-lg"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-800">Creativity</h4>
+<p class="text-gray-600 text-sm">Innovative designs and unique concepts</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center text-primary mr-3">
+<i class="ri-customer-service-line ri-lg"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-800">Service</h4>
+<p class="text-gray-600 text-sm">Client satisfaction is our priority</p>
+</div>
+</div>
+</div>
+<a href="#contact" class="inline-block bg-primary text-white px-8 py-3 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap">
+Contact Us
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section id="services" class="py-20 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">Our <span class="text-primary">Services</span></h2>
+<div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+<p class="text-gray-600 max-w-2xl mx-auto">
+We offer a wide range of decoration and event management services tailored to your specific needs
+</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Wedding Decoration Card -->
+<div class="service-card bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300">
+<div class="h-56 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Luxurious%20Indian%20wedding%20mandap%20decoration%20with%20red%20and%20gold%20theme%2C%20elegant%20drapes%2C%20floral%20arrangements%20with%20roses%2C%20ornate%20golden%20details%2C%20professional%20lighting%2C%20royal%20wedding%20setup%2C%20high-end%20decoration%20with%20traditional%20elements%2C%20sophisticated%20venue%20transformation&width=600&height=400&seq=12347&orientation=landscape" alt="Wedding Decoration" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-4">
+<i class="ri-heart-2-line text-primary ri-lg"></i>
+</div>
+<h3 class="text-xl font-semibold mb-3 text-gray-800">Wedding Decorations</h3>
+<p class="text-gray-600 mb-4">
+From royal to traditional weddings, we create breathtaking setups that make your special day truly magical.
+</p>
+<ul class="mb-6 text-gray-600">
+<li class="flex items-center mb-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-check-line"></i>
+</div>
+<span>Royal & Premium Themes</span>
+</li>
+<li class="flex items-center mb-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-check-line"></i>
+</div>
+<span>Traditional Mandap Setups</span>
+</li>
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-check-line"></i>
+</div>
+<span>Customized Decor Packages</span>
+</li>
+</ul>
+<a href="#contact" class="inline-block text-primary font-medium hover:underline">
+Learn More
+<i class="ri-arrow-right-line ml-1"></i>
+</a>
+</div>
+</div>
+<!-- Corporate Events Card -->
+<div class="service-card bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300">
+<div class="h-56 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Professional%20corporate%20event%20setup%20with%20elegant%20stage%20decoration%2C%20sophisticated%20lighting%2C%20branded%20backdrop%2C%20formal%20seating%20arrangement%2C%20high-end%20corporate%20event%20management%2C%20business%20conference%20decoration%2C%20professional%20podium%20setup%2C%20elegant%20corporate%20dinner%20setting%20with%20gold%20accents&width=600&height=400&seq=12348&orientation=landscape" alt="Corporate Events" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-4">
+<i class="ri-building-line text-primary ri-lg"></i>
+</div>
+<h3 class="text-xl font-semibold mb-3 text-gray-800">Corporate Events</h3>
+<p class="text-gray-600 mb-4">
+Elevate your corporate events with our professional and sophisticated decoration services.
+</p>
+<ul class="mb-6 text-gray-600">
+<li class="flex items-center mb-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-check-line"></i>
+</div>
+<span>Conferences & Seminars</span>
+</li>
+<li class="flex items-center mb-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-check-line"></i>
+</div>
+<span>Product Launches</span>
+</li>
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-check-line"></i>
+</div>
+<span>Award Ceremonies</span>
+</li>
+</ul>
+<a href="#contact" class="inline-block text-primary font-medium hover:underline">
+Learn More
+<i class="ri-arrow-right-line ml-1"></i>
+</a>
+</div>
+</div>
+<!-- Spiritual Events Card -->
+<div class="service-card bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300">
+<div class="h-56 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Elegant%20spiritual%20event%20decoration%20with%20traditional%20elements%2C%20flower%20arrangements%2C%20ceremonial%20setup%2C%20prayer%20area%20decoration%2C%20peaceful%20ambiance%2C%20traditional%20lamps%20and%20diyas%2C%20sacred%20space%20decoration%2C%20professional%20spiritual%20gathering%20setup%20with%20golden%20elements%20and%20red%20flowers&width=600&height=400&seq=12349&orientation=landscape" alt="Spiritual Events" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-4">
+<i class="ri-pray-line text-primary ri-lg"></i>
+</div>
+<h3 class="text-xl font-semibold mb-3 text-gray-800">Spiritual Gatherings</h3>
+<p class="text-gray-600 mb-4">
+Create a serene and divine atmosphere for your spiritual events with our specialized decoration.
+</p>
+<ul class="mb-6 text-gray-600">
+<li class="flex items-center mb-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-check-line"></i>
+</div>
+<span>Religious Ceremonies</span>
+</li>
+<li class="flex items-center mb-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-check-line"></i>
+</div>
+<span>Prayer Meetings</span>
+</li>
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-check-line"></i>
+</div>
+<span>Festival Celebrations</span>
+</li>
+</ul>
+<a href="#contact" class="inline-block text-primary font-medium hover:underline">
+Learn More
+<i class="ri-arrow-right-line ml-1"></i>
+</a>
+</div>
+</div>
+<!-- Special Occasions Card -->
+<div class="service-card bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300">
+<div class="h-56 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Elegant%20birthday%20celebration%20decoration%20with%20balloons%2C%20floral%20arrangements%2C%20sophisticated%20party%20setup%2C%20luxury%20birthday%20event%2C%20anniversary%20celebration%20decoration%20with%20golden%20elements%2C%20special%20occasion%20venue%20transformation%2C%20professional%20event%20decoration%20for%20personal%20celebrations&width=600&height=400&seq=12350&orientation=landscape" alt="Special Occasions" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-4">
+<i class="ri-cake-3-line text-primary ri-lg"></i>
+</div>
+<h3 class="text-xl font-semibold mb-3 text-gray-800">Special Occasions</h3>
+<p class="text-gray-600 mb-4">
+Make your celebrations memorable with our custom decoration services for birthdays, anniversaries, and more.
+</p>
+<ul class="mb-6 text-gray-600">
+<li class="flex items-center mb-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-check-line"></i>
+</div>
+<span>Birthday Celebrations</span>
+</li>
+<li class="flex items-center mb-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-check-line"></i>
+</div>
+<span>Anniversary Parties</span>
+</li>
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-check-line"></i>
+</div>
+<span>Engagement Ceremonies</span>
+</li>
+</ul>
+<a href="#contact" class="inline-block text-primary font-medium hover:underline">
+Learn More
+<i class="ri-arrow-right-line ml-1"></i>
+</a>
+</div>
+</div>
+<!-- Theme Decoration Card -->
+<div class="service-card bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300">
+<div class="h-56 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Creative%20themed%20event%20decoration%20with%20unique%20elements%2C%20custom%20theme%20party%20setup%2C%20innovative%20decoration%20concepts%2C%20professional%20themed%20venue%20transformation%2C%20artistic%20event%20decoration%20with%20custom%20props%2C%20special%20themed%20celebration%20with%20elegant%20touches&width=600&height=400&seq=12351&orientation=landscape" alt="Theme Decoration" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-4">
+<i class="ri-palette-line text-primary ri-lg"></i>
+</div>
+<h3 class="text-xl font-semibold mb-3 text-gray-800">Theme Decoration</h3>
+<p class="text-gray-600 mb-4">
+Transform your venue with our creative themed decoration services tailored to your vision.
+</p>
+<ul class="mb-6 text-gray-600">
+<li class="flex items-center mb-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-check-line"></i>
+</div>
+<span>Custom Theme Creation</span>
+</li>
+<li class="flex items-center mb-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-check-line"></i>
+</div>
+<span>Themed Props & Backdrops</span>
+</li>
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-check-line"></i>
+</div>
+<span>Coordinated Color Schemes</span>
+</li>
+</ul>
+<a href="#contact" class="inline-block text-primary font-medium hover:underline">
+Learn More
+<i class="ri-arrow-right-line ml-1"></i>
+</a>
+</div>
+</div>
+<!-- Full Event Management Card -->
+<div class="service-card bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300">
+<div class="h-56 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Professional%20event%20management%20team%20coordinating%20a%20luxury%20event%2C%20event%20planners%20in%20formal%20attire%20with%20clipboards%2C%20comprehensive%20event%20setup%20with%20decoration%2C%20catering%2C%20and%20entertainment%2C%20full-service%20event%20management%20in%20action%2C%20elegant%20event%20coordination&width=600&height=400&seq=12352&orientation=landscape" alt="Event Management" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-4">
+<i class="ri-calendar-check-line text-primary ri-lg"></i>
+</div>
+<h3 class="text-xl font-semibold mb-3 text-gray-800">Full Event Management</h3>
+<p class="text-gray-600 mb-4">
+Let us handle every aspect of your event from planning to execution with our comprehensive management services.
+</p>
+<ul class="mb-6 text-gray-600">
+<li class="flex items-center mb-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-check-line"></i>
+</div>
+<span>End-to-End Planning</span>
+</li>
+<li class="flex items-center mb-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-check-line"></i>
+</div>
+<span>Vendor Coordination</span>
+</li>
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-check-line"></i>
+</div>
+<span>On-Day Event Management</span>
+</li>
+</ul>
+<a href="#contact" class="inline-block text-primary font-medium hover:underline">
+Learn More
+<i class="ri-arrow-right-line ml-1"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-20 bg-white">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">Our <span class="text-primary">Portfolio</span></h2>
+<div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+<p class="text-gray-600 max-w-2xl mx-auto">
+Explore our stunning decoration work across various events and celebrations
+</p>
+</div>
+<div class="flex justify-center mb-10">
+<div class="inline-flex bg-gray-100 p-1 rounded-full">
+<button id="portfolio-filter-all" class="px-6 py-2 rounded-full bg-primary text-white !rounded-button whitespace-nowrap" data-category="all">All</button>
+<button id="portfolio-filter-weddings" class="px-6 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-button whitespace-nowrap" data-category="wedding">Weddings</button>
+<button id="portfolio-filter-corporate" class="px-6 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-button whitespace-nowrap" data-category="corporate">Corporate</button>
+<button id="portfolio-filter-spiritual" class="px-6 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-button whitespace-nowrap" data-category="spiritual">Spiritual</button>
+<button id="portfolio-filter-special" class="px-6 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-button whitespace-nowrap" data-category="special">Special</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Portfolio Item 1 -->
+<div class="gallery-item overflow-hidden rounded-lg shadow-lg group" data-category="wedding">
+<div class="relative overflow-hidden h-72">
+<img src="https://readdy.ai/api/search-image?query=Luxurious%20royal%20wedding%20mandap%20decoration%20with%20red%20and%20gold%20theme%2C%20elegant%20drapes%2C%20floral%20arrangements%20with%20roses%2C%20ornate%20golden%20details%2C%20professional%20lighting%2C%20royal%20wedding%20setup%20with%20traditional%20elements&width=600&height=500&seq=12353&orientation=portrait" alt="Royal Wedding Decoration" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
+<div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<div class="text-white text-center p-4">
+<h3 class="text-xl font-semibold mb-2">Royal Wedding</h3>
+<p class="text-sm">Luxury mandap decoration with gold and red theme</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Portfolio Item 2 -->
+<div class="gallery-item overflow-hidden rounded-lg shadow-lg group" data-category="corporate">
+<div class="relative overflow-hidden h-72">
+<img src="https://readdy.ai/api/search-image?query=Elegant%20corporate%20conference%20setup%20with%20professional%20stage%20decoration%2C%20branded%20backdrop%2C%20formal%20seating%20arrangement%2C%20sophisticated%20lighting%2C%20high-end%20corporate%20event%20management%2C%20business%20seminar%20decoration&width=600&height=500&seq=12354&orientation=portrait" alt="Corporate Conference" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
+<div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<div class="text-white text-center p-4">
+<h3 class="text-xl font-semibold mb-2">Corporate Conference</h3>
+<p class="text-sm">Professional setup for business events</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Portfolio Item 3 -->
+<div class="gallery-item overflow-hidden rounded-lg shadow-lg group" data-category="spiritual">
+<div class="relative overflow-hidden h-72">
+<img src="https://readdy.ai/api/search-image?query=Traditional%20spiritual%20event%20decoration%20with%20flower%20rangoli%2C%20ceremonial%20setup%2C%20prayer%20area%20decoration%2C%20peaceful%20ambiance%2C%20traditional%20lamps%20and%20diyas%2C%20sacred%20space%20decoration%20with%20golden%20elements%20and%20red%20flowers&width=600&height=500&seq=12355&orientation=portrait" alt="Spiritual Gathering" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
+<div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<div class="text-white text-center p-4">
+<h3 class="text-xl font-semibold mb-2">Spiritual Gathering</h3>
+<p class="text-sm">Sacred space decoration for religious ceremonies</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Portfolio Item 4 -->
+<div class="gallery-item overflow-hidden rounded-lg shadow-lg group" data-category="wedding">
+<div class="relative overflow-hidden h-72">
+<img src="https://readdy.ai/api/search-image?query=Elegant%20engagement%20ceremony%20decoration%20with%20floral%20arrangements%2C%20sophisticated%20setup%2C%20romantic%20ambiance%2C%20luxury%20engagement%20event%2C%20celebration%20decoration%20with%20golden%20elements%20and%20soft%20lighting&width=600&height=500&seq=12356&orientation=portrait" alt="Engagement Ceremony" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
+<div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<div class="text-white text-center p-4">
+<h3 class="text-xl font-semibold mb-2">Engagement Ceremony</h3>
+<p class="text-sm">Romantic setup with elegant floral arrangements</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Portfolio Item 5 -->
+<div class="gallery-item overflow-hidden rounded-lg shadow-lg group" data-category="corporate">
+<div class="relative overflow-hidden h-72">
+<img src="https://readdy.ai/api/search-image?query=Luxury%20product%20launch%20event%20decoration%20with%20branded%20elements%2C%20sophisticated%20product%20display%20area%2C%20elegant%20corporate%20branding%2C%20high-end%20product%20showcase%20setup%2C%20professional%20lighting%20for%20product%20highlight&width=600&height=500&seq=12357&orientation=portrait" alt="Product Launch" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
+<div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<div class="text-white text-center p-4">
+<h3 class="text-xl font-semibold mb-2">Product Launch</h3>
+<p class="text-sm">Sophisticated setup for corporate product unveiling</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Portfolio Item 6 -->
+<div class="gallery-item overflow-hidden rounded-lg shadow-lg group" data-category="special">
+<div class="relative overflow-hidden h-72">
+<img src="https://readdy.ai/api/search-image?query=Elegant%20anniversary%20celebration%20decoration%20with%20romantic%20setup%2C%20sophisticated%20party%20arrangement%2C%20luxury%20anniversary%20event%2C%20celebration%20decoration%20with%20golden%20elements%2C%20floral%20arrangements%2C%20and%20soft%20lighting&width=600&height=500&seq=12358&orientation=portrait" alt="Anniversary Celebration" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
+<div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<div class="text-white text-center p-4">
+<h3 class="text-xl font-semibold mb-2">Anniversary Celebration</h3>
+<p class="text-sm">Romantic setup for special milestone celebrations</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center mt-12">
+<a href="Portfolio-Gallery.html" class="inline-block bg-primary text-white px-8 py-3 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap">
+View All Projects
+</a>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-20 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">Client <span class="text-primary">Testimonials</span></h2>
+<div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+<p class="text-gray-600 max-w-2xl mx-auto">
+What our clients say about our decoration and event management services
+</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="testimonial-card bg-white p-8 rounded-lg shadow-lg">
+<div class="flex items-center mb-6">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-1">
+<i class="ri-star-fill"></i>
+</div>
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-1">
+<i class="ri-star-fill"></i>
+</div>
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-1">
+<i class="ri-star-fill"></i>
+</div>
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-1">
+<i class="ri-star-fill"></i>
+</div>
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-1">
+<i class="ri-star-fill"></i>
+</div>
+</div>
+<p class="text-gray-600 italic mb-6">
+"Bhramhani Decoration transformed our wedding venue into a magical space beyond our expectations. The attention to detail and the quality of decoration was exceptional. Everyone was in awe of the mandap decoration!"
+</p>
+<div class="flex items-center">
+<div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+<img src="https://readdy.ai/api/search-image?query=Professional%20portrait%20of%20an%20Indian%20woman%20in%20formal%20attire%2C%20elegant%20appearance%2C%20neutral%20background%2C%20business%20professional%20headshot&width=100&height=100&seq=12359&orientation=squarish" alt="Priya Sharma" class="w-full h-full object-cover">
+</div>
+<div>
+<h4 class="font-semibold text-gray-800">Priya Sharma</h4>
+<p class="text-sm text-gray-500">Wedding Client</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="testimonial-card bg-white p-8 rounded-lg shadow-lg">
+<div class="flex items-center mb-6">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-1">
+<i class="ri-star-fill"></i>
+</div>
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-1">
+<i class="ri-star-fill"></i>
+</div>
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-1">
+<i class="ri-star-fill"></i>
+</div>
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-1">
+<i class="ri-star-fill"></i>
+</div>
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-1">
+<i class="ri-star-fill"></i>
+</div>
+</div>
+<p class="text-gray-600 italic mb-6">
+"We hired Bhramhani for our annual corporate conference, and they delivered a professional and sophisticated setup that perfectly aligned with our brand. Their team was prompt, efficient, and a pleasure to work with."
+</p>
+<div class="flex items-center">
+<div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+<img src="https://readdy.ai/api/search-image?query=Professional%20portrait%20of%20an%20Indian%20man%20in%20business%20suit%2C%20corporate%20headshot%2C%20neutral%20background%2C%20business%20professional%20appearance&width=100&height=100&seq=12360&orientation=squarish" alt="Rajesh Mehta" class="w-full h-full object-cover">
+</div>
+<div>
+<h4 class="font-semibold text-gray-800">Rajesh Mehta</h4>
+<p class="text-sm text-gray-500">Corporate Client</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="testimonial-card bg-white p-8 rounded-lg shadow-lg">
+<div class="flex items-center mb-6">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-1">
+<i class="ri-star-fill"></i>
+</div>
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-1">
+<i class="ri-star-fill"></i>
+</div>
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-1">
+<i class="ri-star-fill"></i>
+</div>
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-1">
+<i class="ri-star-fill"></i>
+</div>
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-1">
+<i class="ri-star-fill"></i>
+</div>
+</div>
+<p class="text-gray-600 italic mb-6">
+"The spiritual event decoration by Bhramhani was simply divine. They created a serene and peaceful atmosphere that enhanced the spiritual experience. Their understanding of traditional elements was impressive."
+</p>
+<div class="flex items-center">
+<div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+<img src="https://readdy.ai/api/search-image?query=Professional%20portrait%20of%20an%20elderly%20Indian%20man%20with%20glasses%2C%20spiritual%20leader%20appearance%2C%20neutral%20background%2C%20dignified%20expression&width=100&height=100&seq=12361&orientation=squarish" alt="Swami Anand" class="w-full h-full object-cover">
+</div>
+<div>
+<h4 class="font-semibold text-gray-800">Swami Anand</h4>
+<p class="text-sm text-gray-500">Spiritual Event Organizer</p>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center mt-12">
+<a href="#" class="inline-block bg-white border-2 border-primary text-primary px-8 py-3 !rounded-button hover:bg-primary hover:text-white transition-all whitespace-nowrap">
+Read More Testimonials
+</a>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="py-20 bg-white">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="text-center">
+<div class="text-4xl font-bold text-primary mb-2">2000+</div>
+<p class="text-gray-600">Events Decorated</p>
+</div>
+<div class="text-center">
+<div class="text-4xl font-bold text-primary mb-2">500+</div>
+<p class="text-gray-600">Wedding Mandaps</p>
+</div>
+<div class="text-center">
+<div class="text-4xl font-bold text-primary mb-2">300+</div>
+<p class="text-gray-600">Corporate Events</p>
+</div>
+<div class="text-center">
+<div class="text-4xl font-bold text-primary mb-2">19</div>
+<p class="text-gray-600">Years of Experience</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-20 bg-primary bg-opacity-10">
+<div class="container mx-auto px-4">
+<div class="flex flex-col md:flex-row items-center justify-between">
+<div class="w-full md:w-2/3 mb-8 md:mb-0">
+<h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Ready to Transform Your Event?</h2>
+<p class="text-gray-600 text-lg mb-6 max-w-2xl">
+Contact us today to discuss your event decoration needs and get a personalized quote.
+</p>
+<div class="flex flex-wrap gap-4">
+<a href="#contact" class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap">
+Get a Quote
+</a>
+<a href="tel:+919876543210" class="flex items-center bg-white border-2 border-primary text-primary px-8 py-3 !rounded-button hover:bg-primary hover:text-white transition-all whitespace-nowrap">
+<div class="w-5 h-5 flex items-center justify-center mr-2">
+<i class="ri-phone-line"></i>
+</div>
+Call Us
+</a>
+</div>
+</div>
+<div class="w-full md:w-1/3">
+<img src="https://readdy.ai/api/search-image?query=Elegant%20wedding%20decoration%20elements%2C%20golden%20decorative%20items%2C%20floral%20arrangements%20with%20red%20roses%2C%20traditional%20decoration%20pieces%2C%20luxury%20event%20decoration%20items%2C%20mandap%20decoration%20elements&width=500&height=400&seq=12362&orientation=landscape" alt="Decoration Elements" class="w-full h-auto rounded-lg shadow-xl">
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-white">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">Contact <span class="text-primary">Us</span></h2>
+<div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+<p class="text-gray-600 max-w-2xl mx-auto">
+Get in touch with us to discuss your event decoration needs
+</p>
+</div>
+<div class="flex flex-col lg:flex-row gap-12">
+<div class="w-full lg:w-1/2">
+<form class="bg-white p-8 rounded-lg shadow-lg">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<div>
+<label for="name" class="block text-gray-700 mb-2">Full Name</label>
+<input type="text" id="name" class="w-full px-4 py-3 rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary focus:ring-opacity-20" placeholder="Your name">
+</div>
+<div>
+<label for="email" class="block text-gray-700 mb-2">Email Address</label>
+<input type="email" id="email" class="w-full px-4 py-3 rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary focus:ring-opacity-20" placeholder="Your email">
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<div>
+<label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
+<input type="tel" id="phone" class="w-full px-4 py-3 rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary focus:ring-opacity-20" placeholder="Your phone number">
+</div>
+<div>
+<label for="event-type" class="block text-gray-700 mb-2">Event Type</label>
+<div class="relative">
+<select id="event-type" class="w-full px-4 py-3 rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary focus:ring-opacity-20 appearance-none pr-8">
+<option value="" selected disabled>Select event type</option>
+<option value="wedding">Wedding</option>
+<option value="corporate">Corporate Event</option>
+<option value="spiritual">Spiritual Gathering</option>
+<option value="birthday">Birthday Celebration</option>
+<option value="anniversary">Anniversary</option>
+<option value="other">Other</option>
+</select>
+<div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+<div class="w-5 h-5 flex items-center justify-center text-gray-500">
+<i class="ri-arrow-down-s-line"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mb-6">
+<label for="event-date" class="block text-gray-700 mb-2">Event Date</label>
+<input type="date" id="event-date" class="w-full px-4 py-3 rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary focus:ring-opacity-20">
+</div>
+<div class="mb-6">
+<label for="message" class="block text-gray-700 mb-2">Your Message</label>
+<textarea id="message" rows="5" class="w-full px-4 py-3 rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary focus:ring-opacity-20" placeholder="Tell us about your event and requirements"></textarea>
+</div>
+<button type="submit" class="w-full bg-primary text-white py-3 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap">
+Send Message
+</button>
+</form>
+</div>
+<div class="w-full lg:w-1/2">
+<div class="bg-white p-8 rounded-lg shadow-lg h-full">
+<h3 class="text-2xl font-semibold mb-6 text-gray-800">Get in Touch</h3>
+<div class="flex items-start mb-8">
+<div class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mr-4 text-primary">
+<i class="ri-map-pin-line"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-800 mb-1">Our Location</h4>
+<p class="text-gray-600">123 Decoration Avenue, Event City, 400001</p>
+</div>
+</div>
+<div class="flex items-start mb-8">
+<div class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mr-4 text-primary">
+<i class="ri-phone-line"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-800 mb-1">Call Us</h4>
+<p class="text-gray-600">+91 98765 43210</p>
+<p class="text-gray-600">+91 98765 43211</p>
+</div>
+</div>
+<div class="flex items-start mb-8">
+<div class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mr-4 text-primary">
+<i class="ri-mail-line"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-800 mb-1">Email Us</h4>
+<p class="text-gray-600">info@bhramhanidecoration.com</p>
+<p class="text-gray-600">contact@bhramhanidecoration.com</p>
+</div>
+</div>
+<div class="flex items-start mb-8">
+<div class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mr-4 text-primary">
+<i class="ri-time-line"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-800 mb-1">Working Hours</h4>
+<p class="text-gray-600">Monday - Saturday: 9:00 AM - 8:00 PM</p>
+<p class="text-gray-600">Sunday: 10:00 AM - 4:00 PM</p>
+</div>
+</div>
+<h4 class="font-semibold text-gray-800 mb-4">Follow Us</h4>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-full text-gray-600 hover:bg-primary hover:text-white transition-colors">
+<i class="ri-facebook-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-full text-gray-600 hover:bg-primary hover:text-white transition-colors">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-full text-gray-600 hover:bg-primary hover:text-white transition-colors">
+<i class="ri-pinterest-line"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-full text-gray-600 hover:bg-primary hover:text-white transition-colors">
+<i class="ri-youtube-line"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-full text-gray-600 hover:bg-primary hover:text-white transition-colors">
+<i class="ri-whatsapp-line"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Map Section -->
+<section class="h-96 relative">
+<div class="absolute inset-0 bg-center bg-cover" style="background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png')"></div>
+<div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 bg-white p-6 rounded-lg shadow-lg max-w-md w-full">
+<h3 class="text-xl font-semibold mb-2 text-gray-800">Visit Our Studio</h3>
+<p class="text-gray-600 mb-4">123 Decoration Avenue, Event City, 400001</p>
+<a href="#contact" class="inline-block bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap">
+Get Directions
+</a>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white pt-16 pb-8">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+<div>
+<h3 class="text-xl font-semibold mb-6">Bhramhani Decoration</h3>
+<p class="text-gray-400 mb-6">
+Creating magical experiences through exceptional decoration and event management services since 2004.
+</p>
+<div class="flex space-x-4">
+<a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-800 rounded-full text-gray-400 hover:bg-primary hover:text-white transition-colors">
+<i class="ri-facebook-fill"></i>
+</a>
+<a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-800 rounded-full text-gray-400 hover:bg-primary hover:text-white transition-colors">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-800 rounded-full text-gray-400 hover:bg-primary hover:text-white transition-colors">
+<i class="ri-pinterest-line"></i>
+</a>
+<a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-800 rounded-full text-gray-400 hover:bg-primary hover:text-white transition-colors">
+<i class="ri-youtube-line"></i>
+</a>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-semibold mb-6">Quick Links</h3>
+<ul class="space-y-3">
+<li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Home</a></li>
+<li><a href="#about" class="text-gray-400 hover:text-primary transition-colors">About Us</a></li>
+<li><a href="#services" class="text-gray-400 hover:text-primary transition-colors">Services</a></li>
+<li><a href="#portfolio" class="text-gray-400 hover:text-primary transition-colors">Portfolio</a></li>
+<li><a href="#testimonials" class="text-gray-400 hover:text-primary transition-colors">Testimonials</a></li>
+<li><a href="#contact" class="text-gray-400 hover:text-primary transition-colors">Contact</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-xl font-semibold mb-6">Services</h3>
+<ul class="space-y-3">
+<li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Wedding Decoration</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Corporate Events</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Spiritual Gatherings</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Birthday Celebrations</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Anniversary Parties</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Full Event Management</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-xl font-semibold mb-6">Newsletter</h3>
+<p class="text-gray-400 mb-6">
+Subscribe to our newsletter to receive updates on our latest work and special offers.
+</p>
+<form>
+<div class="flex mb-4">
+<input type="email" placeholder="Your email address" class="w-full px-4 py-2 rounded-l text-gray-800 border-none">
+<button type="submit" class="bg-primary text-white px-4 py-2 rounded-r hover:bg-opacity-90 transition-all whitespace-nowrap">
+Subscribe
+</button>
+</div>
+</form>
+<p class="text-gray-500 text-sm">
+By subscribing, you agree to our Privacy Policy.
+</p>
+</div>
+</div>
+<div class="border-t border-gray-800 pt-8">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-500 text-sm mb-4 md:mb-0">
+&copy; 2025 Bhramhani Decoration. All rights reserved.
+</p>
+<div class="flex space-x-6">
+<a href="#" class="text-gray-500 text-sm hover:text-primary transition-colors">Privacy Policy</a>
+<a href="#" class="text-gray-500 text-sm hover:text-primary transition-colors">Terms of Service</a>
+<a href="#" class="text-gray-500 text-sm hover:text-primary transition-colors">Sitemap</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<!-- WhatsApp Floating Button -->
+<a href="#contact" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-colors z-50">
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-whatsapp-line ri-xl"></i>
+</div>
+</a>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+// Header scroll effect
+const header = document.querySelector('header');
+window.addEventListener('scroll', function() {
+if (window.scrollY > 50) {
+header.classList.add('bg-white', 'shadow-md');
+header.classList.remove('bg-opacity-95');
+} else {
+header.classList.remove('shadow-md');
+header.classList.add('bg-opacity-95');
+}
+});
+// Portfolio filtering
+const filterButtons = document.querySelectorAll('[id^="portfolio-filter-"]');
+const portfolioItems = document.querySelectorAll('.gallery-item');
+function filterPortfolio(category) {
+portfolioItems.forEach(item => {
+if (category === 'all' || item.dataset.category === category) {
+item.style.display = 'block';
+} else {
+item.style.display = 'none';
+}
+});
+}
+filterButtons.forEach(button => {
+button.addEventListener('click', function() {
+// Remove active class from all buttons
+filterButtons.forEach(btn => {
+btn.classList.remove('bg-primary', 'text-white');
+btn.classList.add('text-gray-700', 'hover:bg-gray-200');
+});
+// Add active class to clicked button
+this.classList.remove('text-gray-700', 'hover:bg-gray-200');
+this.classList.add('bg-primary', 'text-white');
+// Filter portfolio items
+const category = this.dataset.category;
+filterPortfolio(category);
+});
+});
+});
+</script>
+</body>
+</html>

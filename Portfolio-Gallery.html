@@ -1,0 +1,1916 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Gallery - Bhramhani Decoration</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#C5A572", secondary: "#8B1F2B" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body {
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      }
+      h1, h2, h3, h4, h5, h6 {
+      font-family: 'Playfair Display', serif;
+      }
+      .gallery-item:hover img {
+      transform: scale(1.05);
+      }
+      .nav-link {
+      position: relative;
+      }
+      .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: #C5A572;
+      transition: width 0.3s ease;
+      }
+      .nav-link:hover::after {
+      width: 100%;
+      }
+      .active-nav::after {
+      width: 100%;
+      }
+      .filter-tab {
+      transition: all 0.3s ease;
+      }
+      .filter-tab.active {
+      background-color: #C5A572;
+      color: white;
+      }
+      .project-card {
+      transition: all 0.3s ease;
+      }
+      .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(197, 165, 114, 0.2);
+      }
+      .pagination-btn {
+      transition: all 0.3s ease;
+      }
+      .pagination-btn.active {
+      background-color: #C5A572;
+      color: white;
+      }
+      .skeleton {
+      animation: skeleton-loading 1s linear infinite alternate;
+      }
+      @keyframes skeleton-loading {
+      0% {
+      background-color: rgba(197, 165, 114, 0.1);
+      }
+      100% {
+      background-color: rgba(197, 165, 114, 0.2);
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header
+      class="fixed w-full z-50 transition-all duration-300 bg-white shadow-md"
+    >
+      <div
+        class="container mx-auto px-4 py-3 flex items-center justify-between"
+      >
+        <div class="flex items-center">
+          <a
+            href="https://readdy.ai/home/cf357401-1790-4da3-a113-19d0efb6c4e8/131f9158-2e90-446f-8531-0f074eb7524c"
+            data-readdy="true"
+            class="text-primary font-['Playfair_Display'] text-2xl font-bold"
+          >
+            <span class="text-primary">Bhramhani</span>
+            <span class="text-xs uppercase tracking-widest block text-secondary"
+              >Mandap Decoration</span
+            >
+          </a>
+        </div>
+        <nav class="hidden md:flex items-center space-x-8">
+          <a
+            href="Home---Bhramhani-Decoration.html#home"
+            class="nav-link text-gray-800 hover:text-primary transition-colors"
+            >Home</a
+          >
+          <a
+            href="Home---Bhramhani-Decoration.html#about"
+            class="nav-link text-gray-800 hover:text-primary transition-colors"
+            >About Us</a
+          >
+          <a
+            href="Home---Bhramhani-Decoration.html#services"
+            class="nav-link text-gray-800 hover:text-primary transition-colors"
+            >Services</a
+          >
+          <a href="Portfolio-Gallery.html" class="nav-link active-nav text-primary transition-colors"
+            >Portfolio</a
+          >
+          <a
+            href="Home---Bhramhani-Decoration.html#testimonials"
+            class="nav-link text-gray-800 hover:text-primary transition-colors"
+            >Testimonials</a
+          >
+          <a
+            href="Home---Bhramhani-Decoration.html#contact"
+            class="nav-link text-gray-800 hover:text-primary transition-colors"
+            >Contact</a
+          >
+        </nav>
+        <div class="flex items-center space-x-4">
+          <a
+            href="#contact"
+            class="hidden md:inline-block bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap"
+            >Get a Quote</a
+          >
+          <button
+            id="mobile-menu-button"
+            class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700"
+          >
+            <i class="ri-menu-line ri-lg"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden bg-white shadow-lg absolute w-full"
+      >
+        <div class="container mx-auto px-4 py-3">
+          <nav class="flex flex-col space-y-4">
+            <a
+              href="Home---Bhramhani-Decoration.html#home"
+              data-readdy="true"
+              class="py-2 text-gray-800 hover:text-primary transition-colors"
+              >Home</a
+            >
+            <a
+              href="Home---Bhramhani-Decoration.html#about"
+              data-readdy="true"
+              class="py-2 text-gray-800 hover:text-primary transition-colors"
+              >About Us</a
+            >
+            <a
+              href="Home---Bhramhani-Decoration.html#services"
+              data-readdy="true"
+              class="py-2 text-gray-800 hover:text-primary transition-colors"
+              >Services</a
+            >
+            <a href="Portfolio-Gallery.html" class="py-2 text-primary font-medium">Portfolio</a>
+            <a
+              href="Home---Bhramhani-Decoration.html#testimonials"
+              data-readdy="true"
+              class="py-2 text-gray-800 hover:text-primary transition-colors"
+              >Testimonials</a
+            >
+            <a
+              href="#contact"
+              data-readdy="true"
+              class="py-2 text-gray-800 hover:text-primary transition-colors"
+              >Contact</a
+            >
+            <a
+              href="#quote"
+              data-readdy="true"
+              class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap text-center"
+              >Get a Quote</a
+            >
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Page Title Section -->
+    <section class="pt-32 pb-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">
+            Our <span class="text-primary">Portfolio</span>
+          </h1>
+          <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Explore our stunning decoration work across various events and
+            celebrations. Each project showcases our commitment to excellence
+            and creativity.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Filter Section -->
+    <section class="sticky top-16 z-40 bg-white shadow-md py-4">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div
+            class="flex flex-wrap justify-center md:justify-start gap-2 mb-4 md:mb-0"
+          >
+            <button
+              class="filter-tab active px-6 py-2 !rounded-button whitespace-nowrap"
+              data-category="all"
+            >
+              All <span class="ml-1 text-sm">(24)</span>
+            </button>
+            <button
+              class="filter-tab px-6 py-2 bg-gray-100 text-gray-700 !rounded-button whitespace-nowrap"
+              data-category="wedding"
+            >
+              Weddings <span class="ml-1 text-sm">(10)</span>
+            </button>
+            <button
+              class="filter-tab px-6 py-2 bg-gray-100 text-gray-700 !rounded-button whitespace-nowrap"
+              data-category="corporate"
+            >
+              Corporate <span class="ml-1 text-sm">(6)</span>
+            </button>
+            <button
+              class="filter-tab px-6 py-2 bg-gray-100 text-gray-700 !rounded-button whitespace-nowrap"
+              data-category="spiritual"
+            >
+              Spiritual <span class="ml-1 text-sm">(4)</span>
+            </button>
+            <button
+              class="filter-tab px-6 py-2 bg-gray-100 text-gray-700 !rounded-button whitespace-nowrap"
+              data-category="special"
+            >
+              Special Occasions <span class="ml-1 text-sm">(4)</span>
+            </button>
+            <button
+              class="filter-tab px-6 py-2 bg-gray-100 text-gray-700 !rounded-button whitespace-nowrap"
+              data-category="video"
+            >
+              Videos <span class="ml-1 text-sm">(4)</span>
+            </button>
+          </div>
+          <div class="flex items-center">
+            <label for="items-per-page" class="text-sm text-gray-600 mr-2"
+              >Show:</label
+            >
+            <div class="relative">
+              <select
+                id="items-per-page"
+                class="appearance-none bg-gray-100 border-none text-gray-700 py-2 px-4 pr-8 !rounded-button focus:outline-none focus:ring-2 focus:ring-primary"
+              >
+                <option value="12">12 items</option>
+                <option value="24" selected>24 items</option>
+                <option value="36">36 items</option>
+              </select>
+              <div
+                class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+              >
+                <i class="ri-arrow-down-s-line"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Gallery Grid -->
+    <section class="py-12 bg-white">
+      <div class="container mx-auto px-4">
+        <div
+          id="gallery-grid"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          <!-- Wedding Projects -->
+          <div
+            class="project-card overflow-hidden rounded-lg shadow-lg bg-white"
+            data-category="wedding"
+          >
+            <div class="relative overflow-hidden h-64">
+              <img
+                src="https://readdy.ai/api/search-image?query=Luxurious%2520royal%2520wedding%2520mandap%2520decoration%2520with%2520red%2520and%2520gold%2520theme%252C%2520elegant%2520drapes%252C%2520floral%2520arrangements%2520with%2520roses%252C%2520ornate%2520golden%2520details%252C%2520professional%2520lighting%252C%2520royal%2520wedding%2520setup%2520with%2520traditional%2520elements&width=600&height=450&seq=12353&orientation=landscape"
+                alt="Royal Wedding Decoration"
+                class="w-full h-full object-cover object-top transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-3">
+                <span
+                  class="text-xs font-medium bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full"
+                  >Wedding</span
+                >
+                <span class="text-xs text-gray-500">April 2025</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-800">
+                Royal Wedding Mandap
+              </h3>
+              <p class="text-sm text-gray-600 mb-2">Taj Palace Hotel, Mumbai</p>
+              <p class="text-gray-600 mb-4 line-clamp-2">
+                Luxurious mandap decoration with gold and red theme, featuring
+                elegant drapes and ornate floral arrangements.
+              </p>
+              <a
+                href="#"
+                class="inline-block text-primary font-medium hover:underline"
+              >
+                View Details
+                <i class="ri-arrow-right-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="project-card overflow-hidden rounded-lg shadow-lg bg-white"
+            data-category="wedding"
+          >
+            <div class="relative overflow-hidden h-64">
+              <img
+                src="https://readdy.ai/api/search-image?query=Elegant%2520engagement%2520ceremony%2520decoration%2520with%2520floral%2520arrangements%252C%2520sophisticated%2520setup%252C%2520romantic%2520ambiance%252C%2520luxury%2520engagement%2520event%252C%2520celebration%2520decoration%2520with%2520golden%2520elements%2520and%2520soft%2520lighting&width=600&height=450&seq=12356&orientation=landscape"
+                alt="Engagement Ceremony"
+                class="w-full h-full object-cover object-top transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-3">
+                <span
+                  class="text-xs font-medium bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full"
+                  >Wedding</span
+                >
+                <span class="text-xs text-gray-500">March 2025</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-800">
+                Elegant Engagement Setup
+              </h3>
+              <p class="text-sm text-gray-600 mb-2">Grand Hyatt, Delhi</p>
+              <p class="text-gray-600 mb-4 line-clamp-2">
+                Romantic setup with elegant floral arrangements and soft
+                lighting for a memorable engagement ceremony.
+              </p>
+              <a
+                href="#"
+                class="inline-block text-primary font-medium hover:underline"
+              >
+                View Details
+                <i class="ri-arrow-right-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="project-card overflow-hidden rounded-lg shadow-lg bg-white"
+            data-category="wedding"
+          >
+            <div class="relative overflow-hidden h-64">
+              <img
+                src="https://readdy.ai/api/search-image?query=Modern%2520fusion%2520wedding%2520decoration%2520with%2520contemporary%2520elements%252C%2520pastel%2520colors%252C%2520minimalist%2520mandap%2520design%252C%2520elegant%2520floral%2520arrangements%252C%2520sophisticated%2520lighting%252C%2520modern%2520wedding%2520setup%2520with%2520clean%2520lines%2520and%2520geometric%2520patterns&width=600&height=450&seq=12363&orientation=landscape"
+                alt="Modern Fusion Wedding"
+                class="w-full h-full object-cover object-top transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-3">
+                <span
+                  class="text-xs font-medium bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full"
+                  >Wedding</span
+                >
+                <span class="text-xs text-gray-500">February 2025</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-800">
+                Modern Fusion Wedding
+              </h3>
+              <p class="text-sm text-gray-600 mb-2">JW Marriott, Bangalore</p>
+              <p class="text-gray-600 mb-4 line-clamp-2">
+                Contemporary wedding setup with minimalist design elements,
+                pastel colors, and geometric patterns.
+              </p>
+              <a
+                href="#"
+                class="inline-block text-primary font-medium hover:underline"
+              >
+                View Details
+                <i class="ri-arrow-right-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="project-card overflow-hidden rounded-lg shadow-lg bg-white"
+            data-category="wedding"
+          >
+            <div class="relative overflow-hidden h-64">
+              <img
+                src="https://readdy.ai/api/search-image?query=Traditional%2520South%2520Indian%2520wedding%2520mandap%2520decoration%2520with%2520banana%2520leaves%252C%2520marigold%2520flowers%252C%2520traditional%2520brass%2520lamps%252C%2520coconut%2520decorations%252C%2520authentic%2520South%2520Indian%2520wedding%2520setup%2520with%2520vibrant%2520colors%2520and%2520cultural%2520elements&width=600&height=450&seq=12364&orientation=landscape"
+                alt="South Indian Wedding"
+                class="w-full h-full object-cover object-top transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-3">
+                <span
+                  class="text-xs font-medium bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full"
+                  >Wedding</span
+                >
+                <span class="text-xs text-gray-500">January 2025</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-800">
+                South Indian Traditional
+              </h3>
+              <p class="text-sm text-gray-600 mb-2">Leela Palace, Chennai</p>
+              <p class="text-gray-600 mb-4 line-clamp-2">
+                Authentic South Indian wedding setup with traditional elements
+                like banana leaves, marigold flowers, and brass lamps.
+              </p>
+              <a
+                href="#"
+                class="inline-block text-primary font-medium hover:underline"
+              >
+                View Details
+                <i class="ri-arrow-right-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="project-card overflow-hidden rounded-lg shadow-lg bg-white"
+            data-category="wedding"
+          >
+            <div class="relative overflow-hidden h-64">
+              <img
+                src="https://readdy.ai/api/search-image?query=Outdoor%2520garden%2520wedding%2520decoration%2520with%2520natural%2520elements%252C%2520floral%2520arches%252C%2520rustic%2520wooden%2520details%252C%2520fairy%2520lights%252C%2520elegant%2520garden%2520wedding%2520setup%2520with%2520lush%2520greenery%2520and%2520white%2520flowers%252C%2520open-air%2520ceremony%2520decoration&width=600&height=450&seq=12365&orientation=landscape"
+                alt="Garden Wedding"
+                class="w-full h-full object-cover object-top transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-3">
+                <span
+                  class="text-xs font-medium bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full"
+                  >Wedding</span
+                >
+                <span class="text-xs text-gray-500">December 2024</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-800">
+                Garden Wedding
+              </h3>
+              <p class="text-sm text-gray-600 mb-2">
+                Taj Falaknuma Palace, Hyderabad
+              </p>
+              <p class="text-gray-600 mb-4 line-clamp-2">
+                Enchanting outdoor garden setup with floral arches, rustic
+                wooden details, and fairy lights for a magical ceremony.
+              </p>
+              <a
+                href="#"
+                class="inline-block text-primary font-medium hover:underline"
+              >
+                View Details
+                <i class="ri-arrow-right-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="project-card overflow-hidden rounded-lg shadow-lg bg-white"
+            data-category="wedding"
+          >
+            <div class="relative overflow-hidden h-64">
+              <img
+                src="https://readdy.ai/api/search-image?query=Luxury%2520destination%2520wedding%2520decoration%2520on%2520beach%2520with%2520white%2520and%2520blue%2520theme%252C%2520elegant%2520canopy%252C%2520floral%2520arrangements%252C%2520beach%2520wedding%2520setup%2520with%2520ocean%2520view%252C%2520sophisticated%2520beach%2520ceremony%2520decoration%2520with%2520natural%2520elements&width=600&height=450&seq=12366&orientation=landscape"
+                alt="Beach Wedding"
+                class="w-full h-full object-cover object-top transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-3">
+                <span
+                  class="text-xs font-medium bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full"
+                  >Wedding</span
+                >
+                <span class="text-xs text-gray-500">November 2024</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-800">
+                Beach Destination Wedding
+              </h3>
+              <p class="text-sm text-gray-600 mb-2">Taj Exotica, Goa</p>
+              <p class="text-gray-600 mb-4 line-clamp-2">
+                Breathtaking beach wedding setup with white and blue theme,
+                elegant canopy, and ocean view backdrop.
+              </p>
+              <a
+                href="#"
+                class="inline-block text-primary font-medium hover:underline"
+              >
+                View Details
+                <i class="ri-arrow-right-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="project-card overflow-hidden rounded-lg shadow-lg bg-white"
+            data-category="wedding"
+          >
+            <div class="relative overflow-hidden h-64">
+              <img
+                src="https://readdy.ai/api/search-image?query=Luxury%2520wedding%2520reception%2520decoration%2520with%2520crystal%2520chandeliers%252C%2520elegant%2520table%2520settings%252C%2520floral%2520centerpieces%252C%2520sophisticated%2520lighting%252C%2520high-end%2520reception%2520hall%2520decoration%2520with%2520white%2520and%2520gold%2520theme%252C%2520opulent%2520wedding%2520dinner%2520setup&width=600&height=450&seq=12367&orientation=landscape"
+                alt="Wedding Reception"
+                class="w-full h-full object-cover object-top transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-3">
+                <span
+                  class="text-xs font-medium bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full"
+                  >Wedding</span
+                >
+                <span class="text-xs text-gray-500">October 2024</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-800">
+                Luxury Reception
+              </h3>
+              <p class="text-sm text-gray-600 mb-2">ITC Grand Chola, Chennai</p>
+              <p class="text-gray-600 mb-4 line-clamp-2">
+                Opulent reception hall decoration with crystal chandeliers,
+                elegant table settings, and white and gold theme.
+              </p>
+              <a
+                href="#"
+                class="inline-block text-primary font-medium hover:underline"
+              >
+                View Details
+                <i class="ri-arrow-right-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Corporate Projects -->
+          <div
+            class="project-card overflow-hidden rounded-lg shadow-lg bg-white"
+            data-category="corporate"
+          >
+            <div class="relative overflow-hidden h-64">
+              <img
+                src="https://readdy.ai/api/search-image?query=Elegant%2520corporate%2520conference%2520setup%2520with%2520professional%2520stage%2520decoration%252C%2520branded%2520backdrop%252C%2520formal%2520seating%2520arrangement%252C%2520sophisticated%2520lighting%252C%2520high-end%2520corporate%2520event%2520management%252C%2520business%2520seminar%2520decoration&width=600&height=450&seq=12354&orientation=landscape"
+                alt="Corporate Conference"
+                class="w-full h-full object-cover object-top transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-3">
+                <span
+                  class="text-xs font-medium bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full"
+                  >Corporate</span
+                >
+                <span class="text-xs text-gray-500">March 2025</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-800">
+                Annual Business Conference
+              </h3>
+              <p class="text-sm text-gray-600 mb-2">Hyatt Regency, Mumbai</p>
+              <p class="text-gray-600 mb-4 line-clamp-2">
+                Professional conference setup with branded backdrop, formal
+                seating arrangement, and sophisticated lighting.
+              </p>
+              <a
+                href="#"
+                class="inline-block text-primary font-medium hover:underline"
+              >
+                View Details
+                <i class="ri-arrow-right-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="project-card overflow-hidden rounded-lg shadow-lg bg-white"
+            data-category="corporate"
+          >
+            <div class="relative overflow-hidden h-64">
+              <img
+                src="https://readdy.ai/api/search-image?query=Luxury%2520product%2520launch%2520event%2520decoration%2520with%2520branded%2520elements%252C%2520sophisticated%2520product%2520display%2520area%252C%2520elegant%2520corporate%2520branding%252C%2520high-end%2520product%2520showcase%2520setup%252C%2520professional%2520lighting%2520for%2520product%2520highlight&width=600&height=450&seq=12357&orientation=landscape"
+                alt="Product Launch"
+                class="w-full h-full object-cover object-top transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-3">
+                <span
+                  class="text-xs font-medium bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full"
+                  >Corporate</span
+                >
+                <span class="text-xs text-gray-500">February 2025</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-800">
+                Premium Product Launch
+              </h3>
+              <p class="text-sm text-gray-600 mb-2">
+                Four Seasons Hotel, Bangalore
+              </p>
+              <p class="text-gray-600 mb-4 line-clamp-2">
+                Sophisticated product launch setup with branded elements,
+                elegant display area, and professional lighting.
+              </p>
+              <a
+                href="#"
+                class="inline-block text-primary font-medium hover:underline"
+              >
+                View Details
+                <i class="ri-arrow-right-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="project-card overflow-hidden rounded-lg shadow-lg bg-white"
+            data-category="corporate"
+          >
+            <div class="relative overflow-hidden h-64">
+              <img
+                src="https://readdy.ai/api/search-image?query=Corporate%2520awards%2520ceremony%2520decoration%2520with%2520elegant%2520stage%2520setup%252C%2520branded%2520backdrop%252C%2520formal%2520seating%2520arrangement%252C%2520sophisticated%2520lighting%252C%2520high-end%2520corporate%2520event%2520management%252C%2520business%2520awards%2520night%2520decoration%2520with%2520gold%2520and%2520black%2520theme&width=600&height=450&seq=12368&orientation=landscape"
+                alt="Awards Ceremony"
+                class="w-full h-full object-cover object-top transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-3">
+                <span
+                  class="text-xs font-medium bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full"
+                  >Corporate</span
+                >
+                <span class="text-xs text-gray-500">January 2025</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-800">
+                Annual Awards Night
+              </h3>
+              <p class="text-sm text-gray-600 mb-2">Taj Land's End, Mumbai</p>
+              <p class="text-gray-600 mb-4 line-clamp-2">
+                Elegant awards ceremony setup with branded backdrop, formal
+                seating, and gold and black theme.
+              </p>
+              <a
+                href="#"
+                class="inline-block text-primary font-medium hover:underline"
+              >
+                View Details
+                <i class="ri-arrow-right-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="project-card overflow-hidden rounded-lg shadow-lg bg-white"
+            data-category="corporate"
+          >
+            <div class="relative overflow-hidden h-64">
+              <img
+                src="https://readdy.ai/api/search-image?query=Corporate%2520gala%2520dinner%2520decoration%2520with%2520elegant%2520table%2520settings%252C%2520floral%2520centerpieces%252C%2520sophisticated%2520lighting%252C%2520high-end%2520corporate%2520dinner%2520event%2520management%252C%2520business%2520formal%2520dinner%2520decoration%2520with%2520blue%2520and%2520silver%2520theme&width=600&height=450&seq=12369&orientation=landscape"
+                alt="Corporate Gala"
+                class="w-full h-full object-cover object-top transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-3">
+                <span
+                  class="text-xs font-medium bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full"
+                  >Corporate</span
+                >
+                <span class="text-xs text-gray-500">December 2024</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-800">
+                Executive Gala Dinner
+              </h3>
+              <p class="text-sm text-gray-600 mb-2">The Oberoi, New Delhi</p>
+              <p class="text-gray-600 mb-4 line-clamp-2">
+                Sophisticated gala dinner setup with elegant table settings,
+                floral centerpieces, and blue and silver theme.
+              </p>
+              <a
+                href="#"
+                class="inline-block text-primary font-medium hover:underline"
+              >
+                View Details
+                <i class="ri-arrow-right-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="project-card overflow-hidden rounded-lg shadow-lg bg-white"
+            data-category="corporate"
+          >
+            <div class="relative overflow-hidden h-64">
+              <img
+                src="https://readdy.ai/api/search-image?query=Corporate%2520team%2520building%2520event%2520decoration%2520with%2520casual%2520elegant%2520setup%252C%2520activity%2520stations%252C%2520branded%2520elements%252C%2520outdoor%2520corporate%2520event%2520management%252C%2520business%2520retreat%2520decoration%2520with%2520natural%2520elements%2520and%2520company%2520colors&width=600&height=450&seq=12370&orientation=landscape"
+                alt="Team Building Event"
+                class="w-full h-full object-cover object-top transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-3">
+                <span
+                  class="text-xs font-medium bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full"
+                  >Corporate</span
+                >
+                <span class="text-xs text-gray-500">November 2024</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-800">
+                Team Building Retreat
+              </h3>
+              <p class="text-sm text-gray-600 mb-2">Radisson Blu Resort, Goa</p>
+              <p class="text-gray-600 mb-4 line-clamp-2">
+                Casual yet elegant team building event setup with activity
+                stations, branded elements, and outdoor spaces.
+              </p>
+              <a
+                href="#"
+                class="inline-block text-primary font-medium hover:underline"
+              >
+                View Details
+                <i class="ri-arrow-right-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Spiritual Projects -->
+          <div
+            class="project-card overflow-hidden rounded-lg shadow-lg bg-white"
+            data-category="spiritual"
+          >
+            <div class="relative overflow-hidden h-64">
+              <img
+                src="https://readdy.ai/api/search-image?query=Traditional%2520spiritual%2520event%2520decoration%2520with%2520flower%2520rangoli%252C%2520ceremonial%2520setup%252C%2520prayer%2520area%2520decoration%252C%2520peaceful%2520ambiance%252C%2520traditional%2520lamps%2520and%2520diyas%252C%2520sacred%2520space%2520decoration%2520with%2520golden%2520elements%2520and%2520red%2520flowers&width=600&height=450&seq=12355&orientation=landscape"
+                alt="Spiritual Gathering"
+                class="w-full h-full object-cover object-top transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-3">
+                <span
+                  class="text-xs font-medium bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full"
+                  >Spiritual</span
+                >
+                <span class="text-xs text-gray-500">April 2025</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-800">
+                Sacred Prayer Ceremony
+              </h3>
+              <p class="text-sm text-gray-600 mb-2">Birla Mandir, Delhi</p>
+              <p class="text-gray-600 mb-4 line-clamp-2">
+                Traditional spiritual setup with flower rangoli, ceremonial
+                elements, and traditional lamps and diyas.
+              </p>
+              <a
+                href="#"
+                class="inline-block text-primary font-medium hover:underline"
+              >
+                View Details
+                <i class="ri-arrow-right-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="project-card overflow-hidden rounded-lg shadow-lg bg-white"
+            data-category="spiritual"
+          >
+            <div class="relative overflow-hidden h-64">
+              <img
+                src="https://readdy.ai/api/search-image?query=Elegant%2520temple%2520decoration%2520for%2520festival%2520with%2520traditional%2520elements%252C%2520flower%2520garlands%252C%2520ceremonial%2520setup%252C%2520prayer%2520area%2520decoration%252C%2520peaceful%2520ambiance%252C%2520traditional%2520lamps%2520and%2520diyas%252C%2520sacred%2520space%2520decoration%2520with%2520golden%2520elements%2520and%2520marigold%2520flowers&width=600&height=450&seq=12371&orientation=landscape"
+                alt="Temple Festival"
+                class="w-full h-full object-cover object-top transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-3">
+                <span
+                  class="text-xs font-medium bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full"
+                  >Spiritual</span
+                >
+                <span class="text-xs text-gray-500">March 2025</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-800">
+                Temple Festival Decoration
+              </h3>
+              <p class="text-sm text-gray-600 mb-2">ISKCON Temple, Bangalore</p>
+              <p class="text-gray-600 mb-4 line-clamp-2">
+                Elaborate temple decoration with flower garlands, traditional
+                elements, and marigold flowers for festival celebration.
+              </p>
+              <a
+                href="#"
+                class="inline-block text-primary font-medium hover:underline"
+              >
+                View Details
+                <i class="ri-arrow-right-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="project-card overflow-hidden rounded-lg shadow-lg bg-white"
+            data-category="spiritual"
+          >
+            <div class="relative overflow-hidden h-64">
+              <img
+                src="https://readdy.ai/api/search-image?query=Satyanarayan%2520puja%2520decoration%2520with%2520traditional%2520elements%252C%2520flower%2520arrangements%252C%2520ceremonial%2520setup%252C%2520prayer%2520area%2520decoration%252C%2520peaceful%2520ambiance%252C%2520traditional%2520lamps%2520and%2520diyas%252C%2520sacred%2520space%2520decoration%2520with%2520golden%2520elements%2520and%2520yellow%2520flowers&width=600&height=450&seq=12372&orientation=landscape"
+                alt="Satyanarayan Puja"
+                class="w-full h-full object-cover object-top transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-3">
+                <span
+                  class="text-xs font-medium bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full"
+                  >Spiritual</span
+                >
+                <span class="text-xs text-gray-500">February 2025</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-800">
+                Satyanarayan Puja
+              </h3>
+              <p class="text-sm text-gray-600 mb-2">
+                Private Residence, Mumbai
+              </p>
+              <p class="text-gray-600 mb-4 line-clamp-2">
+                Traditional puja setup with ceremonial elements, flower
+                arrangements, and traditional lamps for auspicious ceremony.
+              </p>
+              <a
+                href="#"
+                class="inline-block text-primary font-medium hover:underline"
+              >
+                View Details
+                <i class="ri-arrow-right-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="project-card overflow-hidden rounded-lg shadow-lg bg-white"
+            data-category="spiritual"
+          >
+            <div class="relative overflow-hidden h-64">
+              <img
+                src="https://readdy.ai/api/search-image?query=Griha%2520pravesh%2520ceremony%2520decoration%2520with%2520traditional%2520elements%252C%2520flower%2520rangoli%252C%2520ceremonial%2520setup%252C%2520prayer%2520area%2520decoration%252C%2520peaceful%2520ambiance%252C%2520traditional%2520lamps%2520and%2520diyas%252C%2520home%2520entrance%2520decoration%2520with%2520mango%2520leaves%2520and%2520marigold%2520flowers&width=600&height=450&seq=12373&orientation=landscape"
+                alt="Griha Pravesh"
+                class="w-full h-full object-cover object-top transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-3">
+                <span
+                  class="text-xs font-medium bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full"
+                  >Spiritual</span
+                >
+                <span class="text-xs text-gray-500">January 2025</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-800">
+                Griha Pravesh Ceremony
+              </h3>
+              <p class="text-sm text-gray-600 mb-2">Private Villa, Pune</p>
+              <p class="text-gray-600 mb-4 line-clamp-2">
+                Traditional house warming ceremony decoration with rangoli,
+                mango leaves, and marigold flowers at home entrance.
+              </p>
+              <a
+                href="#"
+                class="inline-block text-primary font-medium hover:underline"
+              >
+                View Details
+                <i class="ri-arrow-right-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Special Occasions Projects -->
+          <div
+            class="project-card overflow-hidden rounded-lg shadow-lg bg-white"
+            data-category="special"
+          >
+            <div class="relative overflow-hidden h-64">
+              <img
+                src="https://readdy.ai/api/search-image?query=Elegant%2520anniversary%2520celebration%2520decoration%2520with%2520romantic%2520setup%252C%2520sophisticated%2520party%2520arrangement%252C%2520luxury%2520anniversary%2520event%252C%2520celebration%2520decoration%2520with%2520golden%2520elements%252C%2520floral%2520arrangements%252C%2520and%2520soft%2520lighting&width=600&height=450&seq=12358&orientation=landscape"
+                alt="Anniversary Celebration"
+                class="w-full h-full object-cover object-top transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-3">
+                <span
+                  class="text-xs font-medium bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full"
+                  >Special</span
+                >
+                <span class="text-xs text-gray-500">March 2025</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-800">
+                Silver Jubilee Anniversary
+              </h3>
+              <p class="text-sm text-gray-600 mb-2">Taj West End, Bangalore</p>
+              <p class="text-gray-600 mb-4 line-clamp-2">
+                Romantic setup with elegant floral arrangements, golden
+                elements, and soft lighting for a memorable celebration.
+              </p>
+              <a
+                href="#"
+                class="inline-block text-primary font-medium hover:underline"
+              >
+                View Details
+                <i class="ri-arrow-right-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="project-card overflow-hidden rounded-lg shadow-lg bg-white"
+            data-category="special"
+          >
+            <div class="relative overflow-hidden h-64">
+              <img
+                src="https://readdy.ai/api/search-image?query=Luxury%2520birthday%2520celebration%2520decoration%2520with%2520elegant%2520setup%252C%2520sophisticated%2520party%2520arrangement%252C%2520high-end%2520birthday%2520event%252C%2520celebration%2520decoration%2520with%2520colorful%2520elements%252C%2520floral%2520arrangements%252C%2520and%2520professional%2520lighting&width=600&height=450&seq=12374&orientation=landscape"
+                alt="Birthday Celebration"
+                class="w-full h-full object-cover object-top transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-3">
+                <span
+                  class="text-xs font-medium bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full"
+                  >Special</span
+                >
+                <span class="text-xs text-gray-500">February 2025</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-800">
+                50th Birthday Gala
+              </h3>
+              <p class="text-sm text-gray-600 mb-2">ITC Gardenia, Bangalore</p>
+              <p class="text-gray-600 mb-4 line-clamp-2">
+                Elegant birthday celebration setup with sophisticated party
+                arrangement, colorful elements, and professional lighting.
+              </p>
+              <a
+                href="#"
+                class="inline-block text-primary font-medium hover:underline"
+              >
+                View Details
+                <i class="ri-arrow-right-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="project-card overflow-hidden rounded-lg shadow-lg bg-white"
+            data-category="special"
+          >
+            <div class="relative overflow-hidden h-64">
+              <img
+                src="https://readdy.ai/api/search-image?query=Baby%2520shower%2520decoration%2520with%2520pastel%2520colors%252C%2520elegant%2520setup%252C%2520sophisticated%2520party%2520arrangement%252C%2520high-end%2520baby%2520shower%2520event%252C%2520celebration%2520decoration%2520with%2520cute%2520elements%252C%2520floral%2520arrangements%252C%2520and%2520soft%2520lighting&width=600&height=450&seq=12375&orientation=landscape"
+                alt="Baby Shower"
+                class="w-full h-full object-cover object-top transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-3">
+                <span
+                  class="text-xs font-medium bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full"
+                  >Special</span
+                >
+                <span class="text-xs text-gray-500">January 2025</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-800">
+                Elegant Baby Shower
+              </h3>
+              <p class="text-sm text-gray-600 mb-2">Shangri-La Hotel, Delhi</p>
+              <p class="text-gray-600 mb-4 line-clamp-2">
+                Sophisticated baby shower setup with pastel colors, cute
+                elements, floral arrangements, and soft lighting.
+              </p>
+              <a
+                href="#"
+                class="inline-block text-primary font-medium hover:underline"
+              >
+                View Details
+                <i class="ri-arrow-right-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="project-card overflow-hidden rounded-lg shadow-lg bg-white"
+            data-category="special"
+          >
+            <div class="relative overflow-hidden h-64">
+              <img
+                src="https://readdy.ai/api/search-image?query=Luxury%2520housewarming%2520party%2520decoration%2520with%2520elegant%2520setup%252C%2520sophisticated%2520party%2520arrangement%252C%2520high-end%2520housewarming%2520event%252C%2520celebration%2520decoration%2520with%2520modern%2520elements%252C%2520floral%2520arrangements%252C%2520and%2520warm%2520lighting&width=600&height=450&seq=12376&orientation=landscape"
+                alt="Housewarming Party"
+                class="w-full h-full object-cover object-top transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-3">
+                <span
+                  class="text-xs font-medium bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full"
+                  >Special</span
+                >
+                <span class="text-xs text-gray-500">December 2024</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-800">
+                Luxury Housewarming
+              </h3>
+              <p class="text-sm text-gray-600 mb-2">Private Villa, Gurgaon</p>
+              <p class="text-gray-600 mb-4 line-clamp-2">
+                Elegant housewarming celebration with sophisticated party
+                arrangement, modern elements, and warm lighting.
+              </p>
+              <a
+                href="#"
+                class="inline-block text-primary font-medium hover:underline"
+              >
+                View Details
+                <i class="ri-arrow-right-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Video Projects -->
+          <div
+            class="project-card overflow-hidden rounded-lg shadow-lg bg-white"
+            data-category="video"
+          >
+            <div class="relative overflow-hidden h-64 group">
+              <div
+                class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-10"
+              >
+                <button
+                  class="play-video-btn w-16 h-16 flex items-center justify-center rounded-full bg-white bg-opacity-90 text-primary hover:bg-opacity-100 transition-all"
+                >
+                  <i class="ri-play-fill ri-2x"></i>
+                </button>
+              </div>
+              <img
+                src="https://readdy.ai/api/search-image?query=Luxury%20wedding%20ceremony%20video%20thumbnail%20with%20elegant%20mandap%20decoration%2C%20romantic%20lighting%2C%20traditional%20elements%2C%20professional%20wedding%20videography%20scene%20with%20cinematic%20quality&width=600&height=450&seq=12377&orientation=landscape"
+                alt="Wedding Ceremony Video"
+                class="w-full h-full object-cover object-top"
+              />
+              <div
+                class="absolute bottom-4 right-4 bg-black bg-opacity-75 px-2 py-1 rounded text-white text-sm"
+              >
+                5:24
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-3">
+                <span
+                  class="text-xs font-medium bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full"
+                  >Video</span
+                >
+                <span class="text-xs text-gray-500">April 2025</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-800">
+                Royal Wedding Highlights
+              </h3>
+              <p class="text-sm text-gray-600 mb-2">Taj Palace Hotel, Mumbai</p>
+              <p class="text-gray-600 mb-4 line-clamp-2">
+                Cinematic highlights of an extravagant wedding celebration
+                featuring stunning decorations and emotional moments.
+              </p>
+              <a
+                href="#"
+                class="inline-block text-primary font-medium hover:underline"
+              >
+                Watch Video
+                <i class="ri-play-circle-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="project-card overflow-hidden rounded-lg shadow-lg bg-white"
+            data-category="video"
+          >
+            <div class="relative overflow-hidden h-64 group">
+              <div
+                class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-10"
+              >
+                <button
+                  class="play-video-btn w-16 h-16 flex items-center justify-center rounded-full bg-white bg-opacity-90 text-primary hover:bg-opacity-100 transition-all"
+                >
+                  <i class="ri-play-fill ri-2x"></i>
+                </button>
+              </div>
+              <img
+                src="https://readdy.ai/api/search-image?query=Corporate%20event%20video%20thumbnail%20with%20professional%20stage%20setup%2C%20business%20conference%20recording%2C%20elegant%20corporate%20decoration%2C%20professional%20videography%20scene%20with%20high%20production%20value&width=600&height=450&seq=12378&orientation=landscape"
+                alt="Corporate Event Video"
+                class="w-full h-full object-cover object-top"
+              />
+              <div
+                class="absolute bottom-4 right-4 bg-black bg-opacity-75 px-2 py-1 rounded text-white text-sm"
+              >
+                3:45
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-3">
+                <span
+                  class="text-xs font-medium bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full"
+                  >Video</span
+                >
+                <span class="text-xs text-gray-500">March 2025</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-800">
+                Annual Corporate Gala
+              </h3>
+              <p class="text-sm text-gray-600 mb-2">Grand Hyatt, Delhi</p>
+              <p class="text-gray-600 mb-4 line-clamp-2">
+                Professional coverage of a high-profile corporate event with
+                elegant decorations and keynote moments.
+              </p>
+              <a
+                href="#"
+                class="inline-block text-primary font-medium hover:underline"
+              >
+                Watch Video
+                <i class="ri-play-circle-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="project-card overflow-hidden rounded-lg shadow-lg bg-white"
+            data-category="video"
+          >
+            <div class="relative overflow-hidden h-64 group">
+              <div
+                class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-10"
+              >
+                <button
+                  class="play-video-btn w-16 h-16 flex items-center justify-center rounded-full bg-white bg-opacity-90 text-primary hover:bg-opacity-100 transition-all"
+                >
+                  <i class="ri-play-fill ri-2x"></i>
+                </button>
+              </div>
+              <img
+                src="https://readdy.ai/api/search-image?query=Traditional%20festival%20celebration%20video%20thumbnail%20with%20spiritual%20decorations%2C%20temple%20ceremony%20recording%2C%20cultural%20event%20videography%2C%20professional%20recording%20with%20authentic%20elements&width=600&height=450&seq=12379&orientation=landscape"
+                alt="Festival Celebration Video"
+                class="w-full h-full object-cover object-top"
+              />
+              <div
+                class="absolute bottom-4 right-4 bg-black bg-opacity-75 px-2 py-1 rounded text-white text-sm"
+              >
+                4:12
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-3">
+                <span
+                  class="text-xs font-medium bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full"
+                  >Video</span
+                >
+                <span class="text-xs text-gray-500">February 2025</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-800">
+                Temple Festival Coverage
+              </h3>
+              <p class="text-sm text-gray-600 mb-2">ISKCON Temple, Bangalore</p>
+              <p class="text-gray-600 mb-4 line-clamp-2">
+                Beautiful documentation of traditional festival celebrations
+                with elaborate decorations and ceremonies.
+              </p>
+              <a
+                href="#"
+                class="inline-block text-primary font-medium hover:underline"
+              >
+                Watch Video
+                <i class="ri-play-circle-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="project-card overflow-hidden rounded-lg shadow-lg bg-white"
+            data-category="video"
+          >
+            <div class="relative overflow-hidden h-64 group">
+              <div
+                class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-10"
+              >
+                <button
+                  class="play-video-btn w-16 h-16 flex items-center justify-center rounded-full bg-white bg-opacity-90 text-primary hover:bg-opacity-100 transition-all"
+                >
+                  <i class="ri-play-fill ri-2x"></i>
+                </button>
+              </div>
+              <img
+                src="https://readdy.ai/api/search-image?query=Behind%20the%20scenes%20video%20thumbnail%20of%20event%20decoration%20setup%2C%20professional%20decorators%20at%20work%2C%20luxury%20event%20preparation%2C%20time-lapse%20style%20recording%20of%20venue%20transformation&width=600&height=450&seq=12380&orientation=landscape"
+                alt="Behind the Scenes Video"
+                class="w-full h-full object-cover object-top"
+              />
+              <div
+                class="absolute bottom-4 right-4 bg-black bg-opacity-75 px-2 py-1 rounded text-white text-sm"
+              >
+                6:18
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-3">
+                <span
+                  class="text-xs font-medium bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full"
+                  >Video</span
+                >
+                <span class="text-xs text-gray-500">January 2025</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-800">
+                Behind the Scenes
+              </h3>
+              <p class="text-sm text-gray-600 mb-2">Various Locations</p>
+              <p class="text-gray-600 mb-4 line-clamp-2">
+                Exclusive behind-the-scenes footage showing our team
+                transforming venues into magical spaces.
+              </p>
+              <a
+                href="#"
+                class="inline-block text-primary font-medium hover:underline"
+              >
+                Watch Video
+                <i class="ri-play-circle-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Additional Video Projects -->
+          <div
+            class="project-card overflow-hidden rounded-lg shadow-lg bg-white"
+            data-category="video"
+          >
+            <div class="relative overflow-hidden h-64 group">
+              <div
+                class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-10"
+              >
+                <button
+                  class="play-video-btn w-16 h-16 flex items-center justify-center rounded-full bg-white bg-opacity-90 text-primary hover:bg-opacity-100 transition-all"
+                >
+                  <i class="ri-play-fill ri-2x"></i>
+                </button>
+              </div>
+              <img
+                src="https://readdy.ai/api/search-image?query=Wedding%20dance%20performance%20video%20thumbnail%2C%20elegant%20ballroom%20setup%2C%20professional%20dance%20recording%2C%20romantic%20couple%20dance%2C%20wedding%20celebration%20performance&width=600&height=450&seq=12381&orientation=landscape"
+                alt="Wedding Dance Video"
+                class="w-full h-full object-cover object-top"
+              />
+              <div
+                class="absolute bottom-4 right-4 bg-black bg-opacity-75 px-2 py-1 rounded text-white text-sm"
+              >
+                4:45
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-3">
+                <span
+                  class="text-xs font-medium bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full"
+                  >Video</span
+                >
+                <span class="text-xs text-gray-500">March 2025</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-800">
+                Wedding Dance Performance
+              </h3>
+              <p class="text-sm text-gray-600 mb-2">Grand Hyatt, Mumbai</p>
+              <p class="text-gray-600 mb-4 line-clamp-2">
+                Beautiful wedding dance performances captured in our elegantly
+                decorated ballroom setting.
+              </p>
+              <a
+                href="#"
+                class="inline-block text-primary font-medium hover:underline"
+              >
+                Watch Video
+                <i class="ri-play-circle-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="project-card overflow-hidden rounded-lg shadow-lg bg-white"
+            data-category="video"
+          >
+            <div class="relative overflow-hidden h-64 group">
+              <div
+                class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-10"
+              >
+                <button
+                  class="play-video-btn w-16 h-16 flex items-center justify-center rounded-full bg-white bg-opacity-90 text-primary hover:bg-opacity-100 transition-all"
+                >
+                  <i class="ri-play-fill ri-2x"></i>
+                </button>
+              </div>
+              <img
+                src="https://readdy.ai/api/search-image?query=Corporate%20team%20building%20event%20video%20thumbnail%2C%20outdoor%20activity%20setup%2C%20professional%20event%20recording%2C%20team%20activities%2C%20corporate%20event%20videography&width=600&height=450&seq=12382&orientation=landscape"
+                alt="Team Building Video"
+                class="w-full h-full object-cover object-top"
+              />
+              <div
+                class="absolute bottom-4 right-4 bg-black bg-opacity-75 px-2 py-1 rounded text-white text-sm"
+              >
+                5:30
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-3">
+                <span
+                  class="text-xs font-medium bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full"
+                  >Video</span
+                >
+                <span class="text-xs text-gray-500">February 2025</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-800">
+                Corporate Team Building
+              </h3>
+              <p class="text-sm text-gray-600 mb-2">Radisson Blu Resort, Goa</p>
+              <p class="text-gray-600 mb-4 line-clamp-2">
+                Engaging team building activities and corporate events captured
+                in our professionally decorated venues.
+              </p>
+              <a
+                href="#"
+                class="inline-block text-primary font-medium hover:underline"
+              >
+                Watch Video
+                <i class="ri-play-circle-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="project-card overflow-hidden rounded-lg shadow-lg bg-white"
+            data-category="video"
+          >
+            <div class="relative overflow-hidden h-64 group">
+              <div
+                class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-10"
+              >
+                <button
+                  class="play-video-btn w-16 h-16 flex items-center justify-center rounded-full bg-white bg-opacity-90 text-primary hover:bg-opacity-100 transition-all"
+                >
+                  <i class="ri-play-fill ri-2x"></i>
+                </button>
+              </div>
+              <img
+                src="https://readdy.ai/api/search-image?query=Festival%20celebration%20video%20thumbnail%2C%20traditional%20decoration%20setup%2C%20cultural%20event%20recording%2C%20festive%20atmosphere%2C%20celebration%20videography%20with%20vibrant%20colors&width=600&height=450&seq=12383&orientation=landscape"
+                alt="Festival Video"
+                class="w-full h-full object-cover object-top"
+              />
+              <div
+                class="absolute bottom-4 right-4 bg-black bg-opacity-75 px-2 py-1 rounded text-white text-sm"
+              >
+                7:15
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-3">
+                <span
+                  class="text-xs font-medium bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full"
+                  >Video</span
+                >
+                <span class="text-xs text-gray-500">January 2025</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-800">
+                Festival Celebrations
+              </h3>
+              <p class="text-sm text-gray-600 mb-2">Various Locations</p>
+              <p class="text-gray-600 mb-4 line-clamp-2">
+                Vibrant festival celebrations showcasing our traditional and
+                modern decoration styles.
+              </p>
+              <a
+                href="#"
+                class="inline-block text-primary font-medium hover:underline"
+              >
+                Watch Video
+                <i class="ri-play-circle-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="project-card overflow-hidden rounded-lg shadow-lg bg-white"
+            data-category="video"
+          >
+            <div class="relative overflow-hidden h-64 group">
+              <div
+                class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-10"
+              >
+                <button
+                  class="play-video-btn w-16 h-16 flex items-center justify-center rounded-full bg-white bg-opacity-90 text-primary hover:bg-opacity-100 transition-all"
+                >
+                  <i class="ri-play-fill ri-2x"></i>
+                </button>
+              </div>
+              <img
+                src="https://readdy.ai/api/search-image?query=Event%20setup%20timelapse%20video%20thumbnail%2C%20venue%20transformation%2C%20decoration%20process%2C%20professional%20setup%20recording%2C%20before%20and%20after%20event%20space&width=600&height=450&seq=12384&orientation=landscape"
+                alt="Setup Timelapse"
+                class="w-full h-full object-cover object-top"
+              />
+              <div
+                class="absolute bottom-4 right-4 bg-black bg-opacity-75 px-2 py-1 rounded text-white text-sm"
+              >
+                3:45
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-3">
+                <span
+                  class="text-xs font-medium bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full"
+                  >Video</span
+                >
+                <span class="text-xs text-gray-500">December 2024</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-800">
+                Event Setup Timelapse
+              </h3>
+              <p class="text-sm text-gray-600 mb-2">Multiple Venues</p>
+              <p class="text-gray-600 mb-4 line-clamp-2">
+                Fascinating timelapse videos showing the complete transformation
+                of venues through our decoration process.
+              </p>
+              <a
+                href="#"
+                class="inline-block text-primary font-medium hover:underline"
+              >
+                Watch Video
+                <i class="ri-play-circle-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+          <!-- More projects can be added as needed -->
+        </div>
+        <!-- Loading Skeleton Template (hidden by default) -->
+        <div
+          id="loading-skeleton"
+          class="hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          <div class="overflow-hidden rounded-lg shadow-lg bg-white">
+            <div class="h-64 skeleton"></div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-3">
+                <div class="w-20 h-6 skeleton rounded-full"></div>
+                <div class="w-24 h-4 skeleton"></div>
+              </div>
+              <div class="w-3/4 h-7 skeleton mb-2"></div>
+              <div class="w-1/2 h-5 skeleton mb-2"></div>
+              <div class="w-full h-4 skeleton mb-1"></div>
+              <div class="w-full h-4 skeleton mb-4"></div>
+              <div class="w-32 h-6 skeleton"></div>
+            </div>
+          </div>
+          <!-- Repeat skeleton items as needed -->
+        </div>
+        <!-- Pagination -->
+        <div
+          class="mt-12 flex flex-col md:flex-row justify-between items-center"
+        >
+          <div class="text-sm text-gray-600 mb-4 md:mb-0">
+            Showing <span class="font-medium">1-24</span> of
+            <span class="font-medium">24</span> projects
+          </div>
+          <div class="flex items-center space-x-2">
+            <button
+              class="pagination-btn w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-400 cursor-not-allowed"
+            >
+              <i class="ri-arrow-left-s-line"></i>
+            </button>
+            <button
+              class="pagination-btn active w-10 h-10 flex items-center justify-center rounded-full"
+            >
+              1
+            </button>
+            <button
+              class="pagination-btn w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200"
+            >
+              2
+            </button>
+            <button
+              class="pagination-btn w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200"
+            >
+              3
+            </button>
+            <button
+              class="pagination-btn w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200"
+            >
+              <i class="ri-arrow-right-s-line"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary bg-opacity-10">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center justify-between">
+          <div class="w-full md:w-2/3 mb-8 md:mb-0">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
+              Ready to Transform Your Event?
+            </h2>
+            <p class="text-gray-600 text-lg mb-6 max-w-2xl">
+              Contact us today to discuss your event decoration needs and get a
+              personalized quote.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a
+                href="https://readdy.ai/home/cf357401-1790-4da3-a113-19d0efb6c4e8/131f9158-2e90-446f-8531-0f074eb7524c#contact"
+                data-readdy="true"
+                class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap"
+              >
+                Get a Quote
+              </a>
+              <a
+                href="tel:+919876543210"
+                class="flex items-center bg-white border-2 border-primary text-primary px-8 py-3 !rounded-button hover:bg-primary hover:text-white transition-all whitespace-nowrap"
+              >
+                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                  <i class="ri-phone-line"></i>
+                </div>
+                Call Us
+              </a>
+            </div>
+          </div>
+          <div class="w-full md:w-1/3">
+            <img
+              src="https://readdy.ai/api/search-image?query=Elegant%2520wedding%2520decoration%2520elements%252C%2520golden%2520decorative%2520items%252C%2520floral%2520arrangements%2520with%2520red%2520roses%252C%2520traditional%2520decoration%2520pieces%252C%2520luxury%2520event%2520decoration%2520items%252C%2520mandap%2520decoration%2520elements&width=500&height=400&seq=12362&orientation=landscape"
+              alt="Decoration Elements"
+              class="w-full h-auto rounded-lg shadow-xl"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <div>
+            <h3 class="text-xl font-semibold mb-6">Bhramhani Decoration</h3>
+            <p class="text-gray-400 mb-6">
+              Creating magical experiences through exceptional decoration and
+              event management services since 2004.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-8 h-8 flex items-center justify-center bg-gray-800 rounded-full text-gray-400 hover:bg-primary hover:text-white transition-colors"
+              >
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="w-8 h-8 flex items-center justify-center bg-gray-800 rounded-full text-gray-400 hover:bg-primary hover:text-white transition-colors"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a
+                href="#"
+                class="w-8 h-8 flex items-center justify-center bg-gray-800 rounded-full text-gray-400 hover:bg-primary hover:text-white transition-colors"
+              >
+                <i class="ri-pinterest-line"></i>
+              </a>
+              <a
+                href="#"
+                class="w-8 h-8 flex items-center justify-center bg-gray-800 rounded-full text-gray-400 hover:bg-primary hover:text-white transition-colors"
+              >
+                <i class="ri-youtube-line"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-6">Quick Links</h3>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="https://readdy.ai/home/cf357401-1790-4da3-a113-19d0efb6c4e8/131f9158-2e90-446f-8531-0f074eb7524c"
+                  data-readdy="true"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://readdy.ai/home/cf357401-1790-4da3-a113-19d0efb6c4e8/131f9158-2e90-446f-8531-0f074eb7524c#about"
+                  data-readdy="true"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://readdy.ai/home/cf357401-1790-4da3-a113-19d0efb6c4e8/131f9158-2e90-446f-8531-0f074eb7524c#services"
+                  data-readdy="true"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-primary transition-colors">Portfolio</a>
+              </li>
+              <li>
+                <a
+                  href="https://readdy.ai/home/cf357401-1790-4da3-a113-19d0efb6c4e8/131f9158-2e90-446f-8531-0f074eb7524c#testimonials"
+                  data-readdy="true"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  >Testimonials</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://readdy.ai/home/cf357401-1790-4da3-a113-19d0efb6c4e8/131f9158-2e90-446f-8531-0f074eb7524c#contact"
+                  data-readdy="true"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-6">Services</h3>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  >Wedding Decoration</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  >Corporate Events</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  >Spiritual Gatherings</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  >Birthday Celebrations</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  >Anniversary Parties</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  >Full Event Management</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-6">Newsletter</h3>
+            <p class="text-gray-400 mb-6">
+              Subscribe to our newsletter to receive updates on our latest work
+              and special offers.
+            </p>
+            <form>
+              <div class="flex mb-4">
+                <input
+                  type="email"
+                  placeholder="Your email address"
+                  class="w-full px-4 py-2 rounded-l text-gray-800 border-none"
+                />
+                <button
+                  type="submit"
+                  class="bg-primary text-white px-4 py-2 rounded-r hover:bg-opacity-90 transition-all whitespace-nowrap"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </form>
+            <p class="text-gray-500 text-sm">
+              By subscribing, you agree to our Privacy Policy.
+            </p>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 pt-8">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-500 text-sm mb-4 md:mb-0">
+              &copy; 2025 Bhramhani Decoration. All rights reserved.
+            </p>
+            <div class="flex space-x-6">
+              <a
+                href="#"
+                class="text-gray-500 text-sm hover:text-primary transition-colors"
+                >Privacy Policy</a
+              >
+              <a
+                href="#"
+                class="text-gray-500 text-sm hover:text-primary transition-colors"
+                >Terms of Service</a
+              >
+              <a
+                href="#"
+                class="text-gray-500 text-sm hover:text-primary transition-colors"
+                >Sitemap</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- WhatsApp Floating Button -->
+    <a
+      href="https://wa.me/919876543210"
+      class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-colors z-50"
+    >
+      <div class="w-8 h-8 flex items-center justify-center">
+        <i class="ri-whatsapp-line ri-xl"></i>
+      </div>
+    </a>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Video modal
+        const modal = document.createElement("div");
+        modal.className =
+          "fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 hidden";
+        modal.innerHTML = `
+      <div class="relative w-full max-w-4xl mx-4">
+      <button class="absolute -top-12 right-0 text-white hover:text-primary transition-colors">
+      <i class="ri-close-line ri-2x"></i>
+      </button>
+      <div class="relative pt-[56.25%] bg-black rounded-lg overflow-hidden">
+      <iframe class="absolute inset-0 w-full h-full" frameborder="0" allowfullscreen></iframe>
+      </div>
+      </div>
+      `;
+        document.body.appendChild(modal);
+        // Video player functionality
+        const playButtons = document.querySelectorAll(".play-video-btn");
+        const videoLinks = document.querySelectorAll('[data-category="video"] a');
+        const closeButton = modal.querySelector("button");
+        const iframe = modal.querySelector("iframe");
+        // Sample video URLs (replace with actual video URLs)
+        const videoUrls = {
+          "Royal Wedding Highlights": "https://www.youtube.com/embed/sample1",
+          "Annual Corporate Gala": "https://www.youtube.com/embed/sample2",
+          "Temple Festival Coverage": "https://www.youtube.com/embed/sample3",
+          "Behind the Scenes": "https://www.youtube.com/embed/sample4",
+          "Wedding Dance Performance": "https://www.youtube.com/embed/sample5",
+          "Corporate Team Building": "https://www.youtube.com/embed/sample6",
+          "Festival Celebrations": "https://www.youtube.com/embed/sample7",
+          "Event Setup Timelapse": "https://www.youtube.com/embed/sample8",
+        };
+        function playVideo(title) {
+          iframe.src = videoUrls[title];
+          modal.classList.remove("hidden");
+          document.body.style.overflow = "hidden";
+        }
+        function closeVideo() {
+          iframe.src = "";
+          modal.classList.add("hidden");
+          document.body.style.overflow = "";
+        }
+        playButtons.forEach((button) => {
+          button.addEventListener("click", (e) => {
+            e.preventDefault();
+            const card = button.closest(".project-card");
+            const title = card.querySelector("h3").textContent;
+            playVideo(title);
+          });
+        });
+        videoLinks.forEach((link) => {
+          link.addEventListener("click", (e) => {
+            e.preventDefault();
+            const card = link.closest(".project-card");
+            const title = card.querySelector("h3").textContent;
+            playVideo(title);
+          });
+        });
+        closeButton.addEventListener("click", closeVideo);
+        modal.addEventListener("click", (e) => {
+          if (e.target === modal) closeVideo();
+        });
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape") closeVideo();
+        });
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+        mobileMenuButton.addEventListener("click", function () {
+          mobileMenu.classList.toggle("hidden");
+        });
+        // Portfolio filtering
+        const filterTabs = document.querySelectorAll(".filter-tab");
+        const projectCards = document.querySelectorAll(".project-card");
+        const loadingSkeleton = document.getElementById("loading-skeleton");
+        const galleryGrid = document.getElementById("gallery-grid");
+        function filterPortfolio(category) {
+          // Show loading state
+          galleryGrid.classList.add("hidden");
+          loadingSkeleton.classList.remove("hidden");
+          // Simulate loading delay
+          setTimeout(() => {
+            projectCards.forEach((card) => {
+              if (category === "all" || card.dataset.category === category) {
+                card.classList.remove("hidden");
+              } else {
+                card.classList.add("hidden");
+              }
+            });
+            // Hide loading state
+            loadingSkeleton.classList.add("hidden");
+            galleryGrid.classList.remove("hidden");
+            // Smooth scroll to top of gallery
+            document.querySelector(".sticky").scrollIntoView({ behavior: "smooth" });
+            // Update counter
+            updateCounter(category);
+          }, 500);
+        }
+        function updateCounter(category) {
+          let count = 0;
+          if (category === "all") {
+            count = projectCards.length;
+          } else {
+            projectCards.forEach((card) => {
+              if (card.dataset.category === category) {
+                count++;
+              }
+            });
+          }
+          // Update the showing text
+          document.querySelector(".text-sm.text-gray-600").innerHTML =
+            `Showing <span class="font-medium">1-${count}</span> of <span class="font-medium">${count}</span> projects`;
+        }
+        filterTabs.forEach((tab) => {
+          tab.addEventListener("click", function () {
+            // Remove active class from all tabs
+            filterTabs.forEach((t) => {
+              t.classList.remove("active");
+              t.classList.add("bg-gray-100", "text-gray-700");
+            });
+            // Add active class to clicked tab
+            this.classList.add("active");
+            this.classList.remove("bg-gray-100", "text-gray-700");
+            // Filter portfolio items
+            const category = this.dataset.category;
+            filterPortfolio(category);
+          });
+        });
+        // Items per page selector
+        const itemsPerPageSelect = document.getElementById("items-per-page");
+        itemsPerPageSelect.addEventListener("change", function () {
+          // This would typically load a new set of items
+          // For demo purposes, we'll just show a loading state
+          galleryGrid.classList.add("hidden");
+          loadingSkeleton.classList.remove("hidden");
+          setTimeout(() => {
+            loadingSkeleton.classList.add("hidden");
+            galleryGrid.classList.remove("hidden");
+          }, 500);
+        });
+        // Pagination buttons
+        const paginationButtons = document.querySelectorAll(".pagination-btn");
+        paginationButtons.forEach((button) => {
+          if (!button.classList.contains("cursor-not-allowed")) {
+            button.addEventListener("click", function () {
+              // Remove active class from all buttons
+              paginationButtons.forEach((btn) => {
+                if (
+                  !btn.classList.contains("cursor-not-allowed") &&
+                  !isNaN(btn.textContent)
+                ) {
+                  btn.classList.remove("active");
+                  btn.classList.add("bg-gray-100", "text-gray-700");
+                }
+              });
+              // Add active class to clicked button if it's a number
+              if (!isNaN(this.textContent)) {
+                this.classList.add("active");
+                this.classList.remove("bg-gray-100", "text-gray-700");
+              }
+              // Show loading state
+              galleryGrid.classList.add("hidden");
+              loadingSkeleton.classList.remove("hidden");
+              // Simulate loading delay
+              setTimeout(() => {
+                loadingSkeleton.classList.add("hidden");
+                galleryGrid.classList.remove("hidden");
+                // Smooth scroll to top of gallery
+                document
+                  .querySelector(".sticky")
+                  .scrollIntoView({ behavior: "smooth" });
+              }, 500);
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
